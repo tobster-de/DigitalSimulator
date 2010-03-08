@@ -1,0 +1,47 @@
+	Reihenfolge des Updates der Elemente einer Schaltung:
+
+	Ausgehend von einem SignalInput erhalten alle verbundenenen Elemente eine 
+	Ordnungszahl. Kleinere Ordnungszahlen ersetzen dabei höhere. Diese Kennziffern
+	sind rekursiv zu vergeben in der Reihenfolge von Ausgängen zu Eingängen. Liste 
+	der Elemente ist die anhand dieser Ordnungszahl zu sortieren.
+
+	Ein automatisches Update der Elemente über Events würde eine Endlosschleife bei
+	rückgekoppelt verbundenen Elementen (vgl. FlipFlop) bewirken. Diese Möglichkeit 
+	müsste berücksichtigen, dass bereits geupdatete Elemente nicht noch einmal 
+	bearbeitet werden.
+
+
+Alternative:
+
+Terminals und Connections verbreiten Ihren veränderten Zustand direkt über Events 
+weiter. Dies betrifft auch SignalInputs. Nur Logikelemente müssen getriggert werden. 
+
+--------------------------------------------------------------------
+
+Schaltungen mit SignalInputs und SignalOutputs können mittels Symbolen 
+zu neuen Makro-Elementen zusammengefasst werden. Die Ein- und Ausgänge 
+bilden dann die Terminals. Dafür wird eine Zuordnung der Ports des Symbols 
+zu den Inputs/Outputs vorgenommen werden.
+
+--------------------------------------------------------------------
+
+SignalGenerator:
+
+SignalInputs mit den Generatoren verbunden werden. Die Signale erhalten dann 
+ihren Zustand vom Generator. Eine GUI-Komponente dient zum Konfigurieren des 
+Signals. 
+
+GUI-Komponente überarbeiten, sodass die Pegel in beliebigen Vielfachen
+einer Grundzeit anliegen können.
+
+--------------------------------------------------------------------
+
+Terminal:
+
+Event für OutputDirection -> Verbindung
+
+Idee: Delayverhalten wird in den Terminals implementiert und konfiguriert! 
+IOElemente haben stellvertretend die Properties. Diese werden aber an die 
+Terminals weitergereicht. 
+Terminals in Input Richtung haben dann die Möglichkeit zur Flankenverzögerung 
+und jene in Output Richtung können Unit Delay haben.

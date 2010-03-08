@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DigitalClasses.Graphic.GraphicBaseElement">
+    <Position X="5.75" Y="0.5" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EAQAIAAALAAAkQIAAIIEwAQAAQIIIAIgAFAAAAAIAgI=</HashCode>
+      <FileName>Graphic\GraphicBaseElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicConnection">
+    <Position X="0.75" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAACDAAAAgAAAAAAAAAACAAAAQAgEAAAAQAIEAA=</HashCode>
+      <FileName>Graphic\GraphicConnection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicInputOutputElement">
+    <Position X="4.75" Y="3" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAAABAAAAIIkAAAAAAAAAAAAAAAEAAIIEiA=</HashCode>
+      <FileName>Graphic\GraphicInputOutputElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicTerminal">
+    <Position X="9.25" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEgA=</HashCode>
+      <FileName>Graphic\GraphicTerminal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.TextElement">
+    <Position X="12.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AggAAAAAIEAAkgAAAAIIAgAAAAIAAAAAAAAACAIIAgA=</HashCode>
+      <FileName>Graphic\TextElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicSignalInput">
+    <Position X="3.75" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAABAAAAAAAAAAAAAEAEAAAAAAAAAAAAAIIEAA=</HashCode>
+      <FileName>Graphic\GraphicSignalInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicSignalOutput">
+    <Position X="6.5" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIIEAA=</HashCode>
+      <FileName>Graphic\GraphicSignalOutput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicObjectFactory">
+    <Position X="16.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAgAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>Graphic\GraphicObjectFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicShape" BaseTypeListCollapsed="true">
+    <Position X="16.5" Y="7" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAIkQIAAIIAAAAACAAAAAABAECCgAAIABA=</HashCode>
+      <FileName>Graphic\GraphicShape.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.1" />
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicConstants">
+    <Position X="16.5" Y="2.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAiAASAAIAQAABAAAAABAEAAKAAAIAAAAAAIJQAAAFA=</HashCode>
+      <FileName>Graphic\GraphicConstants.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicMacro">
+    <Position X="9.25" Y="8.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAIAAAIAEAA=</HashCode>
+      <FileName>Graphic\GraphicMacro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.NameTextElement">
+    <Position X="12.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Graphic\TextElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.GraphicClock">
+    <Position X="0.75" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAgAAAAAAAAAAAAAAAAAAAAAAAIIEAA=</HashCode>
+      <FileName>Graphic\GraphicClock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

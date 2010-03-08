@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DigitalClasses.Serialization.BaseElementData">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Serialization\Circuits\BaseElementData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.InputElementData">
+    <Position X="1.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\InputElementData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.IOElementData">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAQEiAAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\IOElementData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.OutputElementData">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\OutputElementData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.TerminalData">
+    <Position X="3.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAACAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\TerminalData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.SignalData">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\SignalData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.SignalConverter">
+    <Position X="12.75" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="DigitalClasses.Serialization.SignalConverter.ConvertMethod" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Serialization\Circuits\SignalConverter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAACAAAIAIQAAEAAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\SignalConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.ConnectionData">
+    <Position X="1.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\ConnectionData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.CircuitSerializer">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\CircuitSerializer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.CircuitData">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAABAQAAQAAAAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\CircuitData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.CircuitConverter">
+    <Position X="10.75" Y="3" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="DigitalClasses.Serialization.CircuitConverter.ConvertMethod" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Serialization\Circuits\CircuitConverter.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAABAAAiAAAQAAAAAEBIBCAAAAQCABMQAAAAAAIAAA=</HashCode>
+      <FileName>Serialization\Circuits\CircuitConverter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.MacroElementData">
+    <Position X="6" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\MacroElementData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Serialization.ConstantInputData">
+    <Position X="8.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Serialization\Circuits\ConstantInputData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

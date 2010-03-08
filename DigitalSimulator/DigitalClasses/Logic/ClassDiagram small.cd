@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DigitalClasses.Logic.BaseElement" Collapsed="true">
+    <Position X="5.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAACAAAAIAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\BaseElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.InputOutputElement" Collapsed="true">
+    <Position X="10" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>B0gAAAAAAAABACCAABAEAAEMGAAAAEeEADAAAAQAARA=</HashCode>
+      <FileName>Logic\InputOutputElement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.AndGate" Collapsed="true">
+    <Position X="1" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAAAAAAAAAAAAABAEAAAAAAAACAEAADAAAAQAABA=</HashCode>
+      <FileName>Logic\AndGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.OrGate" Collapsed="true">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAAAAAAAAAAAAABAEAAAAAAAACAEAADAAAAQAABA=</HashCode>
+      <FileName>Logic\OrGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.NotGate" Collapsed="true">
+    <Position X="5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAEAAAAAAAACAEEABAAAAAAABA=</HashCode>
+      <FileName>Logic\NotGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.NorGate" Collapsed="true">
+    <Position X="3" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Logic\NorGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.NandGate" Collapsed="true">
+    <Position X="1" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Logic\NandGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.Terminal" Collapsed="true">
+    <Position X="1.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQCBAABAAFAACAAAAAAAAIIAAAAAIAAJABAAAA=</HashCode>
+      <FileName>Logic\Terminal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.Connection" Collapsed="true">
+    <Position X="4" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>QAQAAAAABAABBAAAAIAAAAAACAAAAACAAAQABAAAAAA=</HashCode>
+      <FileName>Logic\Connection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.State" Collapsed="true">
+    <Position X="19" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAEghACAAAAAAwAAIAAQAAAAAAAAiA=</HashCode>
+      <FileName>Logic\Signals\State.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.SignalInput" Collapsed="true">
+    <Position X="11" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAABA=</HashCode>
+      <FileName>Logic\SignalInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.SignalOutput" Collapsed="true">
+    <Position X="12" Y="7" Width="1.5" />
+    <InheritanceLine Type="DigitalClasses.Logic.InputOutputElement" ManuallyRouted="true">
+      <Path>
+        <Point X="10.75" Y="3.941" />
+        <Point X="10.75" Y="5.626" />
+        <Point X="12.75" Y="5.626" />
+        <Point X="12.75" Y="7" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AMgABQAABAAAABAAAAAAAAAgAAAAAAAEACAABAAAARA=</HashCode>
+      <FileName>Logic\SignalOutput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.Circuit" Collapsed="true">
+    <Position X="6.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAABAAAAAAAAAAAAAAACBABQIAIIAAAAABA=</HashCode>
+      <FileName>Logic\Circuit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.ElementContainer" Collapsed="true">
+    <Position X="6.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABABAAAAAQAAAAAAACAAIAAAAAAAAAAAI=</HashCode>
+      <FileName>Logic\ElementContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Right" Position="0.282" />
+  </Class>
+  <Class Name="DigitalClasses.Logic.Macro" Collapsed="true">
+    <Position X="9" Y="6" Width="1.5" />
+    <InheritanceLine Type="DigitalClasses.Logic.InputOutputElement" ManuallyRouted="true">
+      <Path>
+        <Point X="10.75" Y="3.941" />
+        <Point X="10.75" Y="5.621" />
+        <Point X="9.75" Y="5.621" />
+        <Point X="9.75" Y="6" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEgAABSQAACAAgBAAAEAAAAAAIAgABBEIyAAAAAAgBA=</HashCode>
+      <FileName>Logic\Macro.cs</FileName>
+      <NewMemberFileName>Logic\Delay.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.XnorGate" Collapsed="true">
+    <Position X="7" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAAAAAAAAAAAAABAEAAAAAAAACAEAADAAAAQAABA=</HashCode>
+      <FileName>Logic\XnorGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.XorGate" Collapsed="true">
+    <Position X="8" Y="7" Width="1.5" />
+    <InheritanceLine Type="DigitalClasses.Logic.InputOutputElement" ManuallyRouted="true">
+      <Path>
+        <Point X="10.75" Y="3.941" />
+        <Point X="10.75" Y="5.616" />
+        <Point X="8.75" Y="5.616" />
+        <Point X="8.75" Y="7" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEgAAAAAAAAAAAAACBAEAAQAAAAACAEAADAAAAQAABA=</HashCode>
+      <FileName>Logic\XorGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.MacroCache" Collapsed="true">
+    <Position X="19" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAIAAAAAIAAAAQAAAAAEAAAAIQAAAAAAAgAA=</HashCode>
+      <FileName>Logic\MacroCache.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.Signal" Collapsed="true">
+    <Position X="14.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEIAIEAAQAgCABAUiAAABARAAAAAAIBcCgEAAAJSIBA=</HashCode>
+      <FileName>Logic\Signals\Signal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="DigitalClasses.Logic.SignalList" Collapsed="true">
+    <Position X="16.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AGIAAEAAAAAAABAQiAACJAQAAAAAAYAASAAgAABSIAA=</HashCode>
+      <FileName>Logic\Signals\SignalList.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.1" />
+  </Class>
+  <Class Name="DigitalClasses.Logic.Clock" Collapsed="true">
+    <Position X="10" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEhAAgAABCABAAAgAAAAABAAAAAACAAUICAABAQAARA=</HashCode>
+      <FileName>Logic\Clock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.EdgeDelay" Collapsed="true">
+    <Position X="23" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABiBAAAAAAGIAAACAAAAAAAgAAABAAAAAAiKAAAAAA=</HashCode>
+      <FileName>Logic\EdgeDelay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DigitalClasses.Logic.GateDelay" Collapsed="true">
+    <Position X="24.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAQAAAAEAAAACAIAAAAAAAQIBAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\GateDelay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DigitalClasses.Logic.BufferGate" Collapsed="true">
+    <Position X="5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAAAAAAAAAAAAAAAEAAAAAAAACAEEADAAAAAAABA=</HashCode>
+      <FileName>Logic\BufferGate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Logic.ConstantInput" Collapsed="true">
+    <Position X="11" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEgAAAAABAABAAAAAAAAAAAAAAAAAAAEACAABAQAARA=</HashCode>
+      <FileName>Logic\ConstantInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DigitalClasses.Logic.IDelay">
+    <Position X="23.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAEAAAACAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\IDelay.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DigitalClasses.Logic.DirectionType" Collapsed="true">
+    <Position X="15" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Logic\Enumerations.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DigitalClasses.Controls.GateTool" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Controls\CircuitEditor\GateTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Controls.CircuitTool" Collapsed="true">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAABEAAAAAAAAAAAAEAEAQAAAAAAACAAAA=</HashCode>
+      <FileName>Controls\CircuitEditor\CircuitTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Controls.ConnectionTool" Collapsed="true">
+    <Position X="3.5" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAZAAAAAAIBAAAAAAAAACAQAAAAAAAAgAAIADAAAA=</HashCode>
+      <FileName>Controls\CircuitEditor\ConnectionTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Controls.ElementSelectionTool" Collapsed="true">
+    <Position X="8" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAAgAQAAEAAAAEAAAAAAAAAEAAAAAAAAACAAAA=</HashCode>
+      <FileName>Controls\CircuitEditor\ElementSelectionTool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
