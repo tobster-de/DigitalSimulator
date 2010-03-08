@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BDFBD651-76EB-4CCE-99E1-32297E73EF5D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitalSimulator</RootNamespace>
+    <AssemblyName>DigitalSimulator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <SignAssembly>false</SignAssembly>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>394401DE9B12C3F1B09A47CEECC836B58B0809A7</ManifestCertificateThumbprint>
+    <ManifestKeyFile>DigitalSimulator_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.3.3372.30678, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WinformsDocking\DockPanel_2_3_Bin.zip\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox.Designer.cs">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CircuitEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CircuitEditorForm.Designer.cs">
+      <DependentUpon>CircuitEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileSelector.cs" />
+    <Compile Include="MacroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MacroForm.Designer.cs">
+      <DependentUpon>MacroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ISaveableDocument.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SignalingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignalingForm.Designer.cs">
+      <DependentUpon>SignalingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SimulationControlForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimulationControlForm.Designer.cs">
+      <DependentUpon>SimulationControlForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MacroCreatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MacroCreatorForm.Designer.cs">
+      <DependentUpon>MacroCreatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SymbolEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SymbolEditorForm.Designer.cs">
+      <DependentUpon>SymbolEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox.resx">
+      <DependentUpon>AboutBox.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CircuitEditorForm.resx">
+      <DependentUpon>CircuitEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MacroForm.resx">
+      <DependentUpon>MacroForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignalingForm.resx">
+      <DependentUpon>SignalingForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimulationControlForm.resx">
+      <DependentUpon>SimulationControlForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MacroCreatorForm.resx">
+      <DependentUpon>MacroCreatorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SymbolEditorForm.resx">
+      <DependentUpon>SymbolEditorForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PropertyForm.resx">
+      <DependentUpon>PropertyForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PropertyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PropertyForm.Designer.cs">
+      <DependentUpon>PropertyForm.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ToolBox\ToolBox\ToolBox.csproj">
+      <Project>{A928AC84-38CA-488B-BF58-2CF29B0CB2CA}</Project>
+      <Name>ToolBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DigitalClasses\DigitalClasses.csproj">
+      <Project>{D868A131-F24B-4FB5-A64B-68915C9D6B05}</Project>
+      <Name>DigitalClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\and.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Circuit.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icon.ico" />
+    <None Include="Resources\ArrowLeft.png" />
+    <None Include="Resources\ArrowRight.png" />
+    <None Include="DigitalSimulator_TemporaryKey.pfx" />
+    <None Include="Resources\Clock.bmp" />
+    <None Include="Resources\buffer.bmp" />
+    <None Include="Resources\not.bmp" />
+    <None Include="Resources\xnor.bmp" />
+    <None Include="Resources\delay.bmp" />
+    <None Include="Resources\Delete.bmp" />
+    <None Include="Resources\horzline.bmp" />
+    <None Include="Resources\Line.bmp" />
+    <None Include="Resources\Offset.bmp" />
+    <None Include="Resources\pause.bmp" />
+    <None Include="Resources\play.bmp" />
+    <None Include="Resources\Pointer.bmp" />
+    <None Include="Resources\Rectangle.bmp" />
+    <None Include="Resources\Step.bmp" />
+    <None Include="Resources\stop.bmp" />
+    <None Include="Resources\Terminal.bmp" />
+    <None Include="Resources\Terminal2.bmp" />
+    <None Include="Resources\Text.bmp" />
+    <None Include="Resources\nor.bmp" />
+    <None Include="Resources\xor.bmp" />
+    <None Include="Resources\SignalOut.bmp" />
+    <None Include="Resources\or.bmp" />
+    <None Include="Resources\nand.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DelGate.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Connection.bmp" />
+    <None Include="Resources\DelConn.bmp" />
+    <None Include="Resources\gate.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ConstantIn.bmp" />
+    <Content Include="Resources\SignalIn.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

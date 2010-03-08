@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D868A131-F24B-4FB5-A64B-68915C9D6B05}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DigitalClasses</RootNamespace>
+    <AssemblyName>DigitalClasses</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\CircuitEditor\ElementDeletionTool.cs" />
+    <Compile Include="Controls\CircuitEditor\DisconnectionTool.cs" />
+    <Compile Include="Controls\SignalEditor\SignalEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SignalEditor\SignalEditor.Designer.cs">
+      <DependentUpon>SignalEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events\LocationChangedEventArgs.cs" />
+    <Compile Include="Events\PartSelectedEventArgs.cs" />
+    <Compile Include="Exceptions\NotAUniqueNameException.cs" />
+    <Compile Include="Exceptions\MacroReferenceTypeMismatchException.cs" />
+    <Compile Include="Exceptions\SimulationException.cs" />
+    <Compile Include="Exceptions\MacroReferenceNotFoundException.cs" />
+    <Compile Include="Graphic\ConnectionLine.cs" />
+    <Compile Include="Graphic\GraphicMacro.cs" />
+    <Compile Include="Graphic\GraphicClock.cs" />
+    <Compile Include="Graphic\ConnectionNode.cs" />
+    <Compile Include="Graphic\IConnectionItem.cs" />
+    <Compile Include="Graphic\Symbols\GrabHandle.cs" />
+    <Compile Include="Controls\SymbolEditor\PartDeletionTool.cs" />
+    <Compile Include="Controls\SymbolEditor\SymbolTool.cs" />
+    <Compile Include="Controls\CircuitEditor\CircuitEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CircuitEditor\CircuitEditor.Designer.cs">
+      <DependentUpon>CircuitEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CircuitEditor\GateTool.cs" />
+    <Compile Include="Controls\CircuitEditor\CircuitTool.cs" />
+    <Compile Include="Controls\CircuitEditor\ConnectionTool.cs" />
+    <Compile Include="Controls\CircuitEditor\ElementSelectionTool.cs" />
+    <Compile Include="Controls\SignalEditor\SignalPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SignalEditor\SignalPanel.Designer.cs">
+      <DependentUpon>SignalPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SymbolEditor\PartSelectionTool.cs" />
+    <Compile Include="Controls\SymbolEditor\PortTool.cs" />
+    <Compile Include="Controls\SymbolEditor\TextTool.cs" />
+    <Compile Include="Graphic\Symbols\Symbol.cs" />
+    <Compile Include="Graphic\Symbols\LinePart.cs" />
+    <Compile Include="Graphic\Symbols\PortPart.cs" />
+    <Compile Include="Graphic\Symbols\RectanglePart.cs" />
+    <Compile Include="Graphic\Symbols\SymbolPart.cs" />
+    <Compile Include="Controls\SymbolEditor\TextInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Controls\SymbolEditor\TextInputForm.Designer.cs">
+      <DependentUpon>TextInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Graphic\Symbols\TextPart.cs" />
+    <Compile Include="Controls\UniqueName.cs" />
+    <Compile Include="Events\TerminalCountChangedEventArgs.cs" />
+    <Compile Include="Events\UpdateIndexChangedEventArgs.cs" />
+    <Compile Include="Logic\BufferGate.cs" />
+    <Compile Include="Logic\Circuit.cs" />
+    <Compile Include="Logic\Clock.cs" />
+    <Compile Include="Logic\GateDelay.cs" />
+    <Compile Include="Logic\EdgeDelay.cs" />
+    <Compile Include="Logic\ConstantInput.cs" />
+    <Compile Include="Logic\NoDelay.cs" />
+    <Compile Include="Logic\NotGate.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Logic\Signals\DurationState.cs" />
+    <Compile Include="Logic\Macro.cs" />
+    <Compile Include="Logic\MacroCache.cs" />
+    <Compile Include="Logic\Matching.cs" />
+    <Compile Include="Logic\IDelay.cs" />
+    <Compile Include="Logic\Simulation\Simulation.cs" />
+    <Compile Include="Logic\XnorGate.cs" />
+    <Compile Include="Logic\XorGate.cs" />
+    <Compile Include="Logic\Signals\Signal.cs" />
+    <Compile Include="Logic\Signals\SignalList.cs" />
+    <Compile Include="Logic\Signals\StateTypeConverter.cs" />
+    <Compile Include="Events\ElementSelectedEventArgs.cs" />
+    <Compile Include="Events\NewElementEventArgs.cs" />
+    <Compile Include="Controls\SymbolEditor\LineTool.cs" />
+    <Compile Include="Events\NewPathElementEventArgs.cs" />
+    <Compile Include="Controls\SymbolEditor\RectangleTool.cs" />
+    <Compile Include="Controls\SymbolEditor\SymbolEditor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SymbolEditor\SymbolEditor.Designer.cs">
+      <DependentUpon>SymbolEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SymbolView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\SymbolView.Designer.cs">
+      <DependentUpon>SymbolView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SymbolEditor\UserTool.cs" />
+    <Compile Include="Events\Events.cs" />
+    <Compile Include="Graphic\GraphicBaseElement.cs" />
+    <Compile Include="Graphic\GraphicConnection.cs" />
+    <Compile Include="Graphic\GraphicConstants.cs" />
+    <Compile Include="Graphic\GraphicInputOutputElement.cs" />
+    <Compile Include="Graphic\GraphicObjectFactory.cs" />
+    <Compile Include="Graphic\GraphicInput.cs" />
+    <Compile Include="Graphic\GraphicTerminal.cs" />
+    <Compile Include="Graphic\GraphicShape.cs" />
+    <Compile Include="Graphic\GraphicOutput.cs" />
+    <Compile Include="Graphic\TextElement.cs" />
+    <Compile Include="Logic\AndGate.cs" />
+    <Compile Include="Logic\BaseElement.cs" />
+    <Compile Include="Logic\Connection.cs" />
+    <Compile Include="Logic\ElementContainer.cs" />
+    <Compile Include="Logic\Enumerations.cs" />
+    <Compile Include="Logic\SignalOutput.cs" />
+    <Compile Include="Logic\NorGate.cs" />
+    <Compile Include="Logic\NandGate.cs" />
+    <Compile Include="Logic\OrGate.cs" />
+    <Compile Include="Logic\InputOutputElement.cs" />
+    <Compile Include="Logic\SignalInput.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Logic\Signals\State.cs" />
+    <Compile Include="Logic\Terminal.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Serialization\Circuits\CircuitConverter.cs" />
+    <Compile Include="Serialization\Circuits\BaseElementData.cs" />
+    <Compile Include="Serialization\Circuits\ConnectionData.cs" />
+    <Compile Include="Serialization\Circuits\ConnectionItemData.cs" />
+    <Compile Include="Serialization\Circuits\IOElementData.cs" />
+    <Compile Include="Serialization\Circuits\InputElementData.cs" />
+    <Compile Include="Serialization\Circuits\ClockData.cs" />
+    <Compile Include="Serialization\Circuits\ConstantInputData.cs" />
+    <Compile Include="Serialization\Circuits\LineItemData.cs" />
+    <Compile Include="Serialization\Circuits\NodeItemData.cs" />
+    <Compile Include="Serialization\Circuits\StateData.cs" />
+    <Compile Include="Serialization\Circuits\MacroElementData.cs" />
+    <Compile Include="Serialization\Circuits\OutputElementData.cs" />
+    <Compile Include="Serialization\Circuits\SignalData.cs" />
+    <Compile Include="Serialization\Circuits\SignalConverter.cs" />
+    <Compile Include="Serialization\Circuits\TerminalData.cs" />
+    <Compile Include="Serialization\Macros\MacroData.cs" />
+    <Compile Include="Serialization\Macros\MatchingData.cs" />
+    <Compile Include="Serialization\Macros\MacroSerializer.cs" />
+    <Compile Include="Serialization\Circuits\CircuitSerializer.cs" />
+    <Compile Include="Serialization\Circuits\CircuitData.cs" />
+    <Compile Include="Serialization\Symbols\SymbolConverter.cs" />
+    <Compile Include="Serialization\Symbols\SymbolRectData.cs" />
+    <Compile Include="Serialization\Symbols\SymbolLineData.cs" />
+    <Compile Include="Serialization\Symbols\SymbolPartData.cs" />
+    <Compile Include="Serialization\Symbols\SymbolTextData.cs" />
+    <Compile Include="Serialization\Symbols\SymbolData.cs" />
+    <Compile Include="Serialization\Symbols\SymbolSerializer.cs" />
+    <Compile Include="Serialization\Symbols\SymbolPortData.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\SignalEditor\SignalEditor.resx">
+      <DependentUpon>SignalEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SignalEditor\SignalPanel.resx">
+      <DependentUpon>SignalPanel.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SymbolEditor\SymbolEditor.resx">
+      <DependentUpon>SymbolEditor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SymbolEditor\TextInputForm.resx">
+      <DependentUpon>TextInputForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Graphic\ClassDiagram.cd" />
+    <None Include="Logic\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scaleup.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Controls\CircuitEditor\ClassDiagram_Tools.cd" />
+    <None Include="Graphic\Symbols\ClassDiagram.cd" />
+    <None Include="Logic\ClassDiagram small.cd" />
+    <None Include="Resources\scaledown.bmp" />
+    <None Include="Serialization\Circuits\ClassDiagram.cd" />
+    <None Include="Serialization\Symbols\ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\ToolBox\ToolBox\ToolBox.csproj">
+      <Project>{A928AC84-38CA-488B-BF58-2CF29B0CB2CA}</Project>
+      <Name>ToolBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\RemoveLowState.cur" />
+    <Content Include="Resources\RemoveHighState.cur" />
+    <Content Include="Resources\MoveEdge.cur" />
+    <Content Include="Resources\NegativeEdge.cur" />
+    <Content Include="Resources\PositiveEdge.cur" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

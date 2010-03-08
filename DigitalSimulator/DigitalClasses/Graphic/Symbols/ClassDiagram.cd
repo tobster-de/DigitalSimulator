@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DigitalClasses.Graphic.Symbols.GrabHandle">
+    <Position X="6.25" Y="1.75" Width="1.5" />
+    <NestedTypes>
+      <Delegate Name="DigitalClasses.Graphic.Symbols.GrabHandle.HandleMoved" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Graphic\Symbols\GrabHandle.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAEAAAAAAAAAIIEAAAAAAAAAAEAAEAAAAAAAA=</HashCode>
+      <FileName>Graphic\Symbols\GrabHandle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.Symbols.TextPart">
+    <Position X="3" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAABAAAAgAAAAIIEAQAAAAAAAAAAAAACQIAAAA=</HashCode>
+      <FileName>Graphic\Symbols\TextPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.Symbols.LinePart">
+    <Position X="7.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAIABAACIIEAQAAAAAAAgEAIAAAQAAAAA=</HashCode>
+      <FileName>Graphic\Symbols\LinePart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.Symbols.PortPart">
+    <Position X="0.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAIAAAAAAAAAAAACIIEBQAAAAAAAAAAEAAAQAAAAA=</HashCode>
+      <FileName>Graphic\Symbols\PortPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.Symbols.RectanglePart">
+    <Position X="5.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAABAAAIAJAAAIAEEQAAAAAAAgEAIAAAQAAAAA=</HashCode>
+      <FileName>Graphic\Symbols\RectanglePart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DigitalClasses.Graphic.Symbols.Symbol">
+    <Position X="1.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAAQAAAAAgBAAAAAAgAQAAAAAgAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Graphic\Symbols\Symbol.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DigitalClasses.Graphic.Symbols.SymbolPart">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAJAAABAAAEAAAAAIEEAQAAAAAAAEAAAAAAQAAAAA=</HashCode>
+      <FileName>Graphic\Symbols\SymbolPart.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
