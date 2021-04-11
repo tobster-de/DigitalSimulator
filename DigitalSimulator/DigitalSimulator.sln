@@ -1,6 +1,15 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F940913-913D-481F-9C1F-05B31E8EB0E6}"
+	ProjectSection(SolutionItems) = preProject
+		DigitalSimulator.vsmdi = DigitalSimulator.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		Plan.txt = Plan.txt
+	EndProjectSection
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalClasses", "DigitalClasses\DigitalClasses.csproj", "{D868A131-F24B-4FB5-A64B-68915C9D6B05}"
 	ProjectSection(ProjectDependencies) = postProject
 		{A928AC84-38CA-488B-BF58-2CF29B0CB2CA} = {A928AC84-38CA-488B-BF58-2CF29B0CB2CA}
@@ -12,26 +21,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolViewer", "SymbolViewe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircuitEditor", "CircuitEditor\CircuitEditor.csproj", "{7ED4C72C-8577-4EA2-BB9E-6E3881B9C039}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F940913-913D-481F-9C1F-05B31E8EB0E6}"
-	ProjectSection(SolutionItems) = preProject
-		DigitalSimulator.vsmdi = DigitalSimulator.vsmdi
-		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
-		Plan.txt = Plan.txt
-	EndProjectSection
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigitalSimulator", "DigitalSimulator\DigitalSimulator.csproj", "{BDFBD651-76EB-4CCE-99E1-32297E73EF5D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SignalEditor", "SignalEditor\SignalEditor.csproj", "{353261AF-0DED-4FB3-BAA3-56CE3760BAB9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProjekt", "TestProjekt\TestProjekt.csproj", "{C2D91BAA-BEF0-4DB1-B132-1510F1D9EF29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolBox", "..\ToolBox\ToolBox\ToolBox.csproj", "{A928AC84-38CA-488B-BF58-2CF29B0CB2CA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolBox", "..\ToolBox\ToolBox.csproj", "{A928AC84-38CA-488B-BF58-2CF29B0CB2CA}"
 EndProject
 Global
-	GlobalSection(SubversionScc) = preSolution
-		Svn-Managed = True
-		Manager = AnkhSVN - Subversion Support for Visual Studio
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
@@ -72,5 +70,12 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8203B33D-055F-4BC4-8FDE-F13DBBAFAE02}
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
 	EndGlobalSection
 EndGlobal
